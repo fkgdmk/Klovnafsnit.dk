@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Tilfældige afsnit til Casper Christensen og Frank Hvams tv-serie Klovn">
+  <meta name="keywords" content="random, tilfældige, afsnit, klovn, zulu, tv2play">
+  <meta name="author" content="Fredrik Mikkelsen">
+  <title>Klappen - Tiltfældige afsnit til tv-serien "Klovn"</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!-- TODO:
+- Evt opdater buttons
+ -->
+
+<body>
+  <div class="musicBtn">
+    <button class="pauseBtn"><img id="pauseLogo" src="images/pause1.png" class="pauseIcon" alt""></button>
+  </div>
+
+<div class="header">
+
+  <!-- <div class="dropDown">
+      <div id="dropDownMenu" class="container" onclick="myFunction(this)" style="position: relative; z-index: 3">
+        <div class="bar1" onclick="menu();"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+  </div> -->
+
+  <div class="dropdown">
+    <button class="dropbtn"><img class="menuIcon" src="images/menu.png" alt=""></button>
+    <div class="dropdown-content">
+      <a href="#" class="showTop10">Vis Top 10</a>
+      <a href="#" class="dagensCitat">Random citat</a>
+      <a href="#">Kontakt</a>
+    </div>
+  </div>
+
+  <div id="popUp" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="popUpContent"></p>
+    </div>
+  </div>
+
+
+<div id="klovnLogo" class="hidden">
+    <input type="image" value="sumbit" draggable="false" src="images/klovnIcon.ico" id="image" width="165" height="165" style="position: relative; z-index: 3" class="logo"/>
+  </div>
+</div>
+
+<div class="afsnitDiv">
+  <h1><span class="afsnit"></span></h1>
+</div>
+
+
+<div id="buttons" class="tableDiv" style="position: relative; z-index: 3">
+<table align="center">
+  <tr>
+    <td><button class="s1" onclick="changeKlovnImg();">Sæson 1</button></td>
+    <td><button class="s1" onclick="changeKlovnImg();">Sæson 2</button></td>
+  </tr>
+  <tr>
+    <td><button class="s3" onclick="changeKlovnImg();">Sæson 3</button></td>
+    <td><button class="s4" onclick="changeKlovnImg();">Sæson 4</button></td>
+  </tr>
+  <tr>
+    <td><button class="s5" onclick="changeKlovnImg();">Sæson 5</button></td>
+    <td><button class="s6" onclick="changeKlovnImg();">Sæson 6</button></td>
+  </tr>
+  <tr>
+    <td><button class="alleAfsnitBtn" onclick="changeKlovnImg();">Alle Afsnit</button></td>
+    <td><button class="top10Btn" onclick="changeKlovnImg();">Top 10</button></td>
+  </tr>
+</table>
+</div>
+
+
+<div class="frankImg">
+  <img class="frank" src="images/frank2.jpg"></img>
+</div>
+
+<!-- <footer></footer> -->
+
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src=js/main.js></script>
+</body>
+</html>

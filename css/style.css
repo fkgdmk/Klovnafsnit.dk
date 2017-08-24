@@ -1,0 +1,346 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+body {
+  background-color: #f5f5f5;
+  width: 100%
+}
+
+img {
+  -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+footer {
+  position: absolute;
+  width:100%;
+  height: 1px;
+  bottom: 3%;
+  background-color: #F39591;
+  z-index: 3;
+}
+
+div.hidden {
+  display: none;
+}
+
+.tableDiv{
+  display: none;
+}
+
+.header{
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 230px;
+}
+
+
+.afsnit {
+  width: 100px;
+  font-size: 22px;
+  color: #E73028;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+  display: block;
+  margin: 0 auto;
+  transition: left linear 0.2s, width linear 0.2s, height linear 0.2s, transform linear 0.2s;
+  outline: none;
+  -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.logo:hover{
+  width: 185px;
+  height: 185px;
+  -webkit-transform: rotate(360deg);
+}
+
+button{
+  position: relative;
+
+  display: block;
+  margin: 0px 15px 15px 0px;
+  padding: 0;
+
+  width: 190px;
+  height: 40px;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #E73028;
+  color: #ecf0f1;
+
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+
+  transition: background-color .3s;
+}
+
+button:hover {
+  background-color: #F8BEBC;
+  cursor: pointer;
+  color: #E5362F;
+
+}
+
+button > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+button:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgba(236, 240, 241, .3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/* Styles, not important */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+    /*background-color:  #E73028;
+    border: none;
+    color: white;
+    margin: 0px 15px 15px 0px;
+    padding: 0px;
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;*/
+
+
+button.pauseBtn {
+  margin-left: 20%;
+  width: 30px;
+  border: none;
+  height: 24px;
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+
+}
+
+.frank{
+  position: absolute;
+  z-index: 0;
+  width: 440px;
+  height: 580px;
+  left: 0px;
+  bottom: 0px;
+  pointer-events: none;
+}
+
+.pauseIcon{
+  height: 15px;
+  width: 15px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+
+.pauseBtn:hover{
+  background-image: url("images/play-button.png") left center no-repeat;
+  background-color:#ffffff;
+  color: white;
+
+}
+
+.pauseBtn:focus{
+  background-image: url("images/play-button.png") left center no-repeat;
+}
+
+.musicBtn{
+  position: absolute;
+  text-align: right;
+  right: 10px;
+  top: 5px;
+}
+
+.afsnitDiv {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  button: 20%;
+}
+
+
+table.center {
+  position: static;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.menuIcon{
+  height: 30px;
+  width: 30px;
+}
+
+
+.dropbtn {
+  background-color: #ffffff;
+  height: 30px;
+  width: 40px;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #E73028;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.dropdown-content a:hover {background-color: #F8BEBC}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #FCF8F6;
+}
+
+.container {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #E73028;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+/*^MODaL^*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: 'Roboto', sans-serif
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
