@@ -141,19 +141,6 @@ button:active:before {
 *, *:before, *:after {
   box-sizing: border-box;
 }
-    /*background-color:  #E73028;
-    border: none;
-    color: white;
-    margin: 0px 15px 15px 0px;
-    padding: 0px;
-    width: 190px;
-    height: 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;*/
 
 
 button.pauseBtn {
@@ -161,9 +148,10 @@ button.pauseBtn {
   width: 30px;
   border: none;
   height: 24px;
-  background-color: #ffffff;
+  background-color: transparent;
   color: black;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  z-index: 3;
 
 }
 
@@ -226,7 +214,7 @@ table.center {
 
 
 .dropbtn {
-  background-color: #ffffff;
+  background-color: transparent;
   height: 30px;
   width: 40px;
   font-size: 10px;
@@ -277,32 +265,6 @@ table.center {
     display: inline-block;
     cursor: pointer;
 }
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 3px;
-    background-color: #E73028;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
 
 /*^MODaL^*/
 

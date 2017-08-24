@@ -8,8 +8,8 @@ var audio = new Audio('BentFabric.mp3');
 var $tableDiv = $('.tableDiv');
 
 var action = 1;
-var action1 = 1;
-var afsnit = "";
+var action1 = 2;
+var afsnit = ""
 
 
 var season1 = ["5 årsdagen", "De nye danskere", "Hushovmesteren", "Dalai Lama","Godfather of Drugs",
@@ -50,7 +50,7 @@ function main(){
   var $s6 = $('.s6');
   var $top10 = $('.top10Btn');
   var $alleAfsnitBtn = $('.alleAfsnitBtn');
-  var afsnit = "";
+  audio.volume = 0.2;
 
   popUpWindow();
 
@@ -59,11 +59,10 @@ function main(){
 
 
   hideAndFade();
-  audio.play();
-  audio.volume = 0.2;
   playAndPause();
   afsnit = visAfsnit($s1, season1), visAfsnit($s2, season2), visAfsnit($s3, season3),
   visAfsnit($s4, season4), visAfsnit($s5, season5), visAfsnit($s6, season6), visAfsnit($top10, top10);
+
 
   $('.alleAfsnitBtn').on('click', function(){
     if (action === 1) {
@@ -76,6 +75,8 @@ function main(){
     afsnit = alleAfsnit();
     $afsnitLabel.text(afsnit);
   });
+
+  identitetTjek();
 
   sendTilUrl();
 }
@@ -412,7 +413,6 @@ function alleAfsnit () {
 
 function visAfsnit(btn, array){
 
-
   $(btn).on('click', function(){
 
     afsnit = findAfsnit(array);
@@ -437,7 +437,5 @@ function findAfsnit(array){
   return afsnit;
 
 }
-
-
 
 $(document).ready(main);
