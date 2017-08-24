@@ -76,8 +76,6 @@ function main(){
     $afsnitLabel.text(afsnit);
   });
 
-  identitetTjek();
-
   sendTilUrl();
 }
 
