@@ -145,6 +145,7 @@ button:active:before {
 
 button.pauseBtn {
   margin-left: 20%;
+  top: 4px;
   width: 30px;
   border: none;
   height: 24px;
@@ -161,6 +162,16 @@ button.pauseBtn {
   width: 440px;
   height: 580px;
   left: 0px;
+  bottom: 0px;
+  pointer-events: none;
+}
+
+.frankRight{
+  position: absolute;
+  z-index: 0;
+  width: 440px;
+  height: 580px;
+  right: 0px;
   bottom: 0px;
   pointer-events: none;
 }
@@ -219,7 +230,7 @@ table.center {
   width: 40px;
   font-size: 10px;
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 4px;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 
@@ -266,7 +277,7 @@ table.center {
     cursor: pointer;
 }
 
-/*^MODaL^*/
+/*^Modal^*/
 
 .modal {
     display: none; /* Hidden by default */
