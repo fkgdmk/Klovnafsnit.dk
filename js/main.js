@@ -36,7 +36,10 @@ var top10 = ["Bedragsholm slot", "White House Potential", "De nye danskere", "Bo
 
 var citater = ['"Man kan altid tage en tage en thai pige på brysterne" - Casper Christensen',
 '"Jeg anede ikke at sorte kunne interessere sig for økonomi" - Frank Hvam',
-'"Jeg kan ikke aflæse en fed mands ansigtsudtryk" - Casper Christensen'];
+'"Jeg kan ikke aflæse en fed mands ansigtsudtryk" - Casper Christensen',
+'"Fuck Amnesty. Det´ poolparty" - Casper Christensen', '"Der er lort i vandet!" - Casper Christensen',
+'"Det´ grande." - Pivert', '"Jeg har bare sådan en lars lars dag" - Lars Hjortshøj',
+'"Carsten Bang, jeg fatter ikke hvor du er. Du flytter til fyn uden at ringe" - Casper Christensen' ];
 
 
 
