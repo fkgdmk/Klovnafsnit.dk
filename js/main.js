@@ -32,7 +32,7 @@ var season6 = ["Guffeliguf", "Shut Up", "Sivsko og ægget", "Fru af og til", "Mo
             "Bedragsholm slot", "Bispebjerg Tricket", "Et krus for et knus", "Dilettanterne", "Falsk Lorte Alarm"];
 
 var top10 = ["Bedragsholm slot", "White House Potential", "De nye danskere", "Bornholm", "Hejsan Sverige",
-"Hushovmesteren", "Godfather of Drugs", "Falsk lorte alarm", "Piverts Polterarbend", "Franks fede ferie"];
+"Hushovmesteren", "Godfather of Drugs", "Falsk Lorte Alarm", "Piverts Polterarbend", "Franks fede ferie"];
 
 var citater = ['"Man kan altid tage en tage en thai pige på brysterne" - Casper Christensen',
 '"Jeg anede ikke at sorte kunne interessere sig for økonomi" - Frank Hvam',
