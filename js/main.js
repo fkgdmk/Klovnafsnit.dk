@@ -85,6 +85,7 @@ function main(){
 function popUpWindow() {
 
   var $popUpContent = $('.popUpContent');
+  var $contact = $('.contact');
 
   var modal = document.getElementById("popUp");
   var $popUp = $('.popUp');
@@ -98,6 +99,13 @@ function popUpWindow() {
     modal.style.display = "block";
     $popUpContent.text(dagensCitat());
   });
+
+  var test = 0;
+  $contact.on('click', function() {
+    modal.style.display = "block";
+    $popUpContent.text("Klovnafsnit@gmail.com")
+
+  })
 
   $('.close').on('click', function() {
       modal.style.display = "none";
@@ -327,8 +335,6 @@ function sendTilUrl () {
             case "Falsk Lorte Alarm":
                 url = "http://play.tv2.dk/programmer/serier/komedie/klovn/falsk-lorte-alarm-17413/";
                 break;
-
-
       default:
         console.log("Switch fejl");
     }
