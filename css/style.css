@@ -52,6 +52,7 @@ div.hidden {
   margin: 0 auto;
   transition: left linear 0.2s, width linear 0.2s, height linear 0.2s, transform linear 0.2s;
   outline: none;
+  cursor: pointer;
   -khtml-user-select: none;
     -o-user-select: none;
     -moz-user-select: none;
