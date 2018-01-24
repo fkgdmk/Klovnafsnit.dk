@@ -58,8 +58,6 @@ function main(){
   popUpWindow();
 
   $("div#klovnLogo").removeClass("hidden");
-  //$("div#buttons").removeClass("hidden");
-
 
   hideAndFade();
   playAndPause();
