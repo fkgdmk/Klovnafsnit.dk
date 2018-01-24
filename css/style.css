@@ -157,16 +157,6 @@ button.pauseBtn {
 
 }
 
-.frank{
-  position: absolute;
-  z-index: 0;
-  width: 440px;
-  height: 580px;
-  left: 0px;
-  bottom: 0px;
-  pointer-events: none;
-}
-
 .frankRight{
   position: absolute;
   z-index: 0;
@@ -317,4 +307,20 @@ table.center {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
+  }
+  .frankRight{
+    width: 240px;
+    height: 380px;
+  }
+
+  button{
+    width: 140px;
+    height: 30px;
+  }
+
 }
